@@ -8,9 +8,11 @@ Dir["./app/models/*"].each {|file| require file }
 
 ActiveRecord::Base.establish_connection(
   adapter:  'postgresql',
-  database: 'growler',
-  host:     'localhost'
+  database: 'beertalk',
+  host:     'localhost',
+  password: 'Change$h4'
 )
 
 use Rack::MethodOverride
+use BeertalkController
 run ApplicationController
