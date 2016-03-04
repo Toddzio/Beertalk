@@ -1,6 +1,21 @@
+<<<<<<< HEAD
 <h1>Let's Beertalk</h1>
 <% @mBeertalk.each do |talk| %>
   <a href="/beertalk/<%= beertalk.id %>"><%= beertalk.id %></a><br>
 <% end %>
 
 <!-- <p><a href="/movies/new" class="btn btn-primary">Add a movie!</a></p> -->
+=======
+<h3>Add a Talk</h3>
+
+<form action="/views" method="post">
+  Title:<br>
+  <input type="text" name="beertalk[title]"><br>
+  What do you want to share:<br>
+  <input type="text" name="beertalk[share]"><br>
+  <input type="submit">
+</form><br>
+
+<p><a href="/views">Back!</a></p>
+
+>>>>>>> 110343b43549fc14105fb780e26194e47b6ea425
